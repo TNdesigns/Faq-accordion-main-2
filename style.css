@@ -1,0 +1,402 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    overflow-x: hidden;
+    background-color: hsl(275, 100%, 97%);
+}
+.content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-bx{
+    height: 560px;
+    width: 600px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 180px;
+    display: flex;
+    flex-direction: column;
+}
+#star{
+    height: 42px;
+    width: 42px;
+    position: relative;
+    top: 50px;
+    left: 43px;
+}
+.main-bx > h1{
+    position: relative;
+    top: 0px;
+    left: 103px;
+    font-family: "Work Sans";
+    font-size: 50px;
+}
+.main-bx > ul{
+    list-style-type: none;
+    margin-right: 95px;
+    position: relative;
+    top: 20px;
+    left: 45px;
+}
+.main-bx > ul > li{
+    margin: 20px;
+}
+#answr-1,
+#answr-2,
+#answr-3,
+#answr-4{
+    display: none;
+    margin: 15px;
+}
+.main-bx > ul > li > b{
+    font-family: "Work Sans";
+}
+#accrdn-3 > b{
+    font-size: 14.6px;
+}
+#answr-1{
+    display: block;
+    margin-right: 30px;
+    font-family: "Work Sans";
+    font-size: 13.5px;
+    position: relative;
+    left: -15px;
+}
+#answr-2,
+#answr-3,
+#answr-4{
+    display: none;
+    margin-right: 30px;
+    font-family: "Work Sans";
+    font-size: 13.5px;
+    position: relative;
+    left: -15px;
+}
+#accrdn-1,
+#accrdn-2,
+#accrdn-3,
+#accrdn-4{
+    position: relative;
+    top: -6px;
+    left: -17px;
+}
+#accrdn-1 > b:hover,
+#accrdn-2 > b:hover,
+#accrdn-3 > b:hover,
+#accrdn-4 > b:hover{
+    color: rgb(188, 0, 238);
+    cursor: pointer;
+}
+#accrdn-1 > #minus-btn{
+    visibility: visible;
+    position: relative;
+    top: 8px;
+    left: 40px;
+}
+#accrdn-1 > #plus-btn{
+    visibility: hidden;
+}
+#accrdn-2 > #plus-btn{
+    left: 275px;
+}
+#accrdn-3 > #plus-btn{
+    left: 88px;
+}
+#accrdn-4 > #plus-btn{
+    left: 106px;
+}
+#accrdn-2 > #minus-btn2{
+    position: relative;
+    top: 8px;
+    left: 245px;
+    visibility: hidden;
+    cursor: pointer;
+}
+#accrdn-3 > #minus-btn3{
+    position: relative;
+    top: 8px;
+    left: 58px;
+    visibility: hidden;
+    cursor: pointer;
+}
+#accrdn-4 > #minus-btn4{
+    position: relative;
+    top: 8px;
+    left: 76px;
+    visibility: hidden;
+    cursor: pointer;
+}
+#plus-btn{
+    position: relative;
+    top: 8px;
+    left: 70px;
+    cursor: pointer;
+    visibility: visible;
+}
+#minus-btn{
+    visibility: hidden;
+    cursor: pointer;
+    position: relative;
+    top: 8px;
+    left: 58px;
+}
+@media screen and (min-device-width:300px) and (max-device-width:399px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    html,body{
+        overflow-x: hidden;
+        height: 100%;
+    }
+    .content{
+        position: relative;
+        top: -174px;
+    }
+    .main-bx{
+        height: 130vw;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        background-color: white;
+        top: 80vw;
+    }
+    #accrdn-1 > #minus-btn{
+        top: -10vw;
+        left: 53vw;
+    }
+    #accrdn-1 > #answr-1{
+        margin-right: -20vw;
+        
+    }
+    .main-bx > ul > li{
+        margin: 0vw;
+        
+    }
+    .main-bx > ul{
+        top: 10vw;
+        display: flex;
+        flex-direction: column;
+    }
+    #tbtn1{
+        position: relative;
+        top: 5vw;
+        left: 2vw;
+        white-space: nowrap;
+        font-size: 10px;
+    }
+    #tbtn2{
+        position: relative;
+        top: -1vw;
+        left: 2vw;
+        white-space: nowrap;
+        font-size: 10px;
+    }
+    .main-bx > ul > li > #tbtn3{
+        position: relative;
+        top: 6vw;
+        left: 2vw;
+        white-space: nowrap;
+        font-size: 10px;
+    }
+    #tbtn4{
+        position: relative;
+        top: 6vw;
+        left: 2vw;
+        white-space: nowrap;
+        font-size: 10px;
+    }
+    .main-bx > ul > hr{
+        width: 70vw;
+        position: relative;
+        left: -3vw;
+    }
+    #plus-btn{
+        top: -1.2vw;
+        left: 70vw;
+    }
+    #accrdn-2 > #plus-btn{
+        top: 2.2vw;
+        left: 37.3vw;
+    }
+    #accrdn-3 > #plus-btn{
+        top: 2.2vw;
+        left: 70.3vw;
+    }
+    #accrdn-4 > #plus-btn{
+        top: 0.8vw;
+        left: 70.3vw;
+    }
+    #accrdn-1 > #minus-btn{
+        top: -1vw;
+        left: 62vw;
+    }
+    #accrdn-2 > #minus-btn2{
+        top: 2.1vw;
+        left: 29.2vw;
+    }
+    #accrdn-2 > #minus-btn2{
+        top: 2.1vw;
+        left: 29.2vw;
+    }
+    #accrdn-3 > #minus-btn3{
+        top: 2vw;
+        left: 62.1vw;
+    }
+    #accrdn-4 > #minus-btn4{
+        top: 1vw;
+        left: 62.1vw;
+    }
+    #answr-2{
+        margin-right: -20vw;
+    }
+    #answr-3{
+        margin-right: -20vw;
+    }
+    #answr-4{
+        margin-right: -15vw;
+    }
+}
+@media screen and (min-device-width:400px) and (max-device-width:499px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    html,body{
+        overflow-x: hidden;
+        height: 100%;
+    }
+    .content{
+        position: relative;
+        top: -69vw;
+    }
+    .main-bx{
+        height: 130vw;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        overflow-x: hidden;
+        top: 80vw;
+    }
+    #accrdn-1 > #minus-btn{
+        top: -10vw;
+        left: 53vw;
+    }
+    #accrdn-1 > #answr-1{
+        margin-right: -20vw;
+        
+    }
+    .main-bx > ul > li{
+        margin: 0vw;
+        
+    }
+    .main-bx > ul{
+        top: 10vw;
+        display: flex;
+        flex-direction: column;
+    }
+    #tbtn1{
+        position: relative;
+        top: 5vw;
+        left: 2vw;
+        white-space: nowrap;
+        font-size: 10px;
+    }
+    #tbtn2{
+        position: relative;
+        top: -1vw;
+        left: 2vw;
+        white-space: nowrap;
+        font-size: 10px;
+    }
+    .main-bx > ul > li > #tbtn3{
+        position: relative;
+        top: 6vw;
+        left: 2vw;
+        white-space: nowrap;
+        font-size: 10px;
+    }
+    #tbtn4{
+        position: relative;
+        top: 6vw;
+        left: 2vw;
+        white-space: nowrap;
+        font-size: 10px;
+    }
+    .main-bx > ul > hr{
+        width: 70vw;
+        position: relative;
+        left: -3vw;
+    }
+    #plus-btn{
+        top: -1.2vw;
+        left: 70vw;
+    }
+    #accrdn-2 > #plus-btn{
+        top: 2.2vw;
+        left: 40.5vw;
+    }
+    #accrdn-3 > #plus-btn{
+        top: 2.2vw;
+        left: 70.3vw;
+    }
+    #accrdn-4 > #plus-btn{
+        top: 8vw;
+        left: 14.9vw;
+    }
+    #accrdn-1 > #minus-btn{
+        top: -1vw;
+        left: 62.7vw;
+    }
+    #accrdn-2 > #minus-btn2{
+        top: 2.1vw;
+        left: 32.9vw;
+    }
+    #accrdn-3 > #minus-btn3{
+        top: 2vw;
+        left: 63.1vw;
+    }
+    #accrdn-4 > #minus-btn4{
+        top: -0.5vw;
+        left: 70vw;
+    }
+    #answr-2{
+        margin-right: -20vw;
+    }
+    #answr-3{
+        margin-right: -20vw;
+    }
+    #answr-4{
+        margin-right: -15vw;
+    }
+}
+@media screen and (orientation:landscape) {
+    *{
+        margin: 0vw;
+        padding: 0vw;
+    }
+    html,body{
+        overflow-x: hidden;
+    }
+    .main-bx{
+        overflow-x: hidden;
+    }
+    #accrdn-1 > #plus-btn{
+        left: 10.8vw;
+    }
+    #accrdn-3 > #plus-btn{
+        left: 14.7vw;
+    }
+    #accrdn-3 > #minus-btn3{
+        left: 10.4vw;
+    }
+}
